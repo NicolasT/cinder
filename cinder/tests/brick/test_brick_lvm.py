@@ -351,7 +351,7 @@ class BrickLvmTestCase(test.TestCase):
                                  self.fake_execute)
         self.assertTrue(self.thin_vg.supports_thin_provisioning('sudo'))
         self.thin_vg.update_volume_group_info = mock.MagicMock()
-        with mock.patch('cinder.openstack.common.processutils.execute'):
+        with mock.patch('oslo.concurrency.processutils.execute'):
             executor = mock.MagicMock()
             self.thin_vg._execute = executor
             self.thin_vg.extend_thinpool()
