@@ -2144,6 +2144,15 @@
 
 
 #
+# Options defined in cinder.volume.drivers.srb
+#
+
+# Comma-separated list of REST servers to connect to (string
+# value)
+#srb_base_urls=<None>
+
+
+#
 # Options defined in cinder.volume.drivers.vmware.vmdk
 #
 
